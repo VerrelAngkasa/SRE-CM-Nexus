@@ -16,5 +16,11 @@ module "gcs_buckets" {
   set_admin_roles = true
   admins = ["user:verrelangkasa20@gmail.com"]
 
-  versioning = { first = true }
+  versioning = { first = false }
+}
+
+resource "google_storage_bucket_iam_member" "nexus_gcs_access" {
+  bucket = module.gcs_buckets.name
+  role   = "roles/storage.admin"
+  member = "serviceAccount:${var.cluster_sa}"
 }
