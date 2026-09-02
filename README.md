@@ -30,10 +30,11 @@ Nexus App: http://34.128.64.178:80
 <br>
 <img width="817" height="446" alt="Screenshot 2026-09-02 182539" src="https://github.com/user-attachments/assets/4ecacd00-fa82-4982-8f0b-f24d6e4da410" />
 <br>
+<img width="1130" height="360" alt="image" src="https://github.com/user-attachments/assets/2f0f4cbf-f9ad-4a40-8231-77faf0292b25" />
+<br>
 <img width="1145" height="506" alt="Screenshot 2026-09-02 182811" src="https://github.com/user-attachments/assets/f9bfbb7b-7db8-4ebd-a1c5-b983f159699f" />
 
-6. Continuous integration - a theoretical question
-<br>
+6. Continuous integration - a theoretical question <br>
 Ans: The solution I will suggest is to implement GitOps approach and utilize CI tools/software for example GitHub Actions, Jenkins, GitLab, etc, where we can define pipelines/workflows and run continuous integration and delivery process whenever a changes occur in our source code whether it triggers from a push or pull request event.
 
 
