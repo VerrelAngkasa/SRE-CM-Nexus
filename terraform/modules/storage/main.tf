@@ -11,6 +11,8 @@ module "gcs_buckets" {
   project_id  = local.project_id
   names       = [ local.bucket_name ]
 
+  location    = "asia-southeast2"
+
   set_admin_roles = true
   admins = ["user:verrelangkasa20@gmail.com"]
 
