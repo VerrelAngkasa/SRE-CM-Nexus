@@ -19,6 +19,8 @@ provider "google" {
 
 module "storage" {
     source = "../../modules/storage"
+
+    cluster_sa = module.compute.cluster_sa
 }
 
 module "compute" {
