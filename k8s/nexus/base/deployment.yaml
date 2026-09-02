@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nexus-deployment
+  namespace: nexus
+  labels:
+    app: nexus
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nexus
+  template:
+    metadata:
+      labels:
+        app: nexus
+    spec:
+      containers:
+      - name: nexus-repo
+        image: sonatype/nexus3:3.96.0-alpine
+        volumeMounts:
+          - mountPath: "/mnt/data"
+            name: nexus-pv
+      volumes:
+        - name: nexus-pv
+          persistentVolumeClaim:
+            claimName: nexus-pv-claim
