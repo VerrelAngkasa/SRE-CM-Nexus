@@ -5,13 +5,14 @@ metadata:
   labels:
     type: local
 spec:
-  storageClassName: default
+  storageClassName: manual
   capacity:
-    storage: 3Gi
+    storage: 1Gi
   accessModes:
     - ReadWriteOnce
   hostPath:
-    path: "/mnt/data"
+    path: "/tmp"
+    type: DirectoryOrCreate
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
@@ -19,10 +20,10 @@ metadata:
   name: nexus-pv-claim
   namespace: nexus
 spec:
-  storageClassName: default
+  storageClassName: manual
   accessModes:
     - ReadWriteOnce
   resources:
     requests:
-      storage: 3Gi
+      storage: 1Gi
 

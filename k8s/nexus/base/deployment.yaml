@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nexus-deployment
+  name: nexus
   namespace: nexus
   labels:
     app: nexus
@@ -19,7 +19,7 @@ spec:
       - name: nexus-repo
         image: sonatype/nexus3:3.96.0-alpine
         volumeMounts:
-          - mountPath: "/mnt/data"
+          - mountPath: "/nexus-data"
             name: nexus-pv
       volumes:
         - name: nexus-pv
