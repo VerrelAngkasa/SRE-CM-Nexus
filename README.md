@@ -37,7 +37,7 @@ While testing and building the image, I noticed that the Nexus image natively su
 <img width="1145" height="506" alt="Screenshot 2026-09-02 182811" src="https://github.com/user-attachments/assets/f9bfbb7b-7db8-4ebd-a1c5-b983f159699f" />
 
 6. Continuous integration - a theoretical question <br>
-Ans: The solution I will suggest is to implement GitOps approach and utilize CI tools/software for example GitHub Actions, Jenkins, GitLab, etc, where we can define workflows to run continuous integration and delivery pipelines whenever changes occur in the source code whether it triggered from a push or pull request event.
+Ans: I will suggest to utilize CI tools for example GitHub Actions, Jenkins, GitLab, etc, where we can define workflows to run continuous integration and delivery pipelines whenever changes occur in the source code whether it triggered from a push or pull request event. The workflow will build, run tests, and automatically deploy the new image's version to the test environtment.
 
 
 
