@@ -9,7 +9,9 @@ Password: 12345678 <br>
 <img width="1433" height="944" alt="Screenshot 2026-09-02 184106" src="https://github.com/user-attachments/assets/2b319f45-475e-49a8-b637-2f1a20f309c2" />
 
 1. Build a Custom Container <br>
-While testing and building the image, I noticed that the Nexus image natively supports Google Cloud Storage (GCS) capability for the blob store without requiring a plugin. Although the image had the capability, I still define the custom Dockerfile. <br>
+While testing and building the image, I noticed that the Nexus image natively supports Google Cloud Storage (GCS) capability for the blob store without requiring a plugin. Although the image had the capability, I still define the custom Dockerfile image in order to follow the challenge requirements. <br>
+<img width="768" height="485" alt="Screenshot 2026-09-03 111117" src="https://github.com/user-attachments/assets/acd72e1a-a40d-46fa-afb8-eb3c3d615099" />
+<br>
 
 2. Kubernetes Config
 <img width="595" height="106" alt="Screenshot 2026-09-02 180519" src="https://github.com/user-attachments/assets/b35cec08-1362-4afa-832c-2c2327638670" />
