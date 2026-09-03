@@ -18,10 +18,10 @@ While testing and building the image, I noticed that the Nexus image natively su
 <br>
 <img width="1255" height="311" alt="Screenshot 2026-09-02 180626" src="https://github.com/user-attachments/assets/5783a1b0-0ae2-4e3d-a2a4-1a54dd4a88d3" />
 
-4. GCP Resource Creation
+3. GCP Resource Creation
 <img width="938" height="244" alt="Screenshot 2026-09-02 180738" src="https://github.com/user-attachments/assets/b0cec5d0-e72b-4903-99a6-073086d2e6ae" />
 
-5. Deploy to GCP Project
+4. Deploy to GCP Project
 <img width="1433" height="643" alt="Screenshot 2026-09-02 182403" src="https://github.com/user-attachments/assets/7790b3c5-17b1-4267-9e6b-8c0ea543d981" />
 <br>
 <img width="1253" height="634" alt="Screenshot 2026-09-02 182443" src="https://github.com/user-attachments/assets/f2c52698-c2c3-42ad-94fc-f956a56a1076" />
@@ -36,7 +36,7 @@ While testing and building the image, I noticed that the Nexus image natively su
 <br>
 <img width="1145" height="506" alt="Screenshot 2026-09-02 182811" src="https://github.com/user-attachments/assets/f9bfbb7b-7db8-4ebd-a1c5-b983f159699f" />
 
-6. Continuous integration - a theoretical question <br>
+5. Continuous integration - a theoretical question <br>
 Ans: I will suggest to utilize CI tools for example GitHub Actions, Jenkins, GitLab, etc, where we can define workflows to run continuous integration and delivery pipelines whenever changes occur in the source code whether it triggered from a push or pull request event. The workflow will build, run tests, and automatically deploy the new image's version to the test environtment.
 
 
