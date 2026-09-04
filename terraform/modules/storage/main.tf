@@ -16,6 +16,8 @@ module "gcs_buckets" {
   set_admin_roles = true
   admins = ["user:verrelangkasa20@gmail.com"]
 
+  force_destroy = { first = true }
+ 
   versioning = { first = false }
 }
 

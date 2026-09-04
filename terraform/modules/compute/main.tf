@@ -15,6 +15,8 @@ module "gke" {
   region                     = "asia-southeast2"
   zones                      = ["asia-southeast2-a"]
 
+  deletion_protection        = false
+
   network                    = "default"
   subnetwork                 = "default"
   ip_range_pods              = ""
